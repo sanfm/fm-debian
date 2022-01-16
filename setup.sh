@@ -12,7 +12,7 @@ apt install unzip picom bspwm polybar lightdm rofi kitty thunar sxhkd nitrogen l
 # Enable lightdm on start up
 sudo systemctl enable lightdm.service
 # Custom config for lightdm & lightdm-gtk-greeter
-cp - R lightDM/* /etc/lightdm/
+cp -R lightDM/* /etc/lightdm/
 
 
 # Copy configuration files
