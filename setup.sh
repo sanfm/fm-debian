@@ -22,6 +22,13 @@ cd /home/$username
 chown -R $username .config
 chgrp -R $username .config
 
+# Add theme and icons
+cp themes-icons/Orchis.tar.xz /usr/share/themes
+tar -xf /usr/share/themes/Orchis.tar.xz
+rm /usr/share/themes/Orchis.tar.xz
+cp themes-icons/01-Tela.tar.xz /usr/share/icons
+tar -xf /usr/share/icons/01-Tela.tar.xz
+rm /usr/share/icons/01-Tela.tar.xz
 
 # Add images
 mkdir -p /usr/share/backgrounds
