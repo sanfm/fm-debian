@@ -26,10 +26,10 @@ chgrp -R $username .config
 cd $builddir
 # Add theme and icons
 cp themes-icons/Orchis.tar.xz /usr/share/themes
-tar -xf /usr/share/themes/Orchis.tar.xz
+tar -xf /usr/share/themes/Orchis.tar.xz -C /usr/share/themes/
 rm /usr/share/themes/Orchis.tar.xz
 cp themes-icons/01-Tela.tar.xz /usr/share/icons
-tar -xf /usr/share/icons/01-Tela.tar.xz
+tar -xf /usr/share/icons/01-Tela.tar.xz -C /usr/share/icons/
 rm /usr/share/icons/01-Tela.tar.xz
 
 # Add images
