@@ -11,6 +11,8 @@ apt install unzip picom bspwm polybar lightdm rofi kitty thunar sxhkd nitrogen l
 
 # Enable lightdm on start up
 sudo systemctl enable lightdm.service
+# Custom config for lightdm & lightdm-grtk-greeter
+cp - R lightDM/* /etc/lightdm/
 
 
 # Copy configuration files
@@ -19,5 +21,13 @@ cp -R dotfiles/* /home/$username/.config/
 cd /home/$username
 chown -R $username .config
 chgrp -R $username .config
+
+
+# Add images
+mkdir -p /usr/share/backgrounds
+mkdir -p /usr/share/backgrounds/wallpapers
+cp images/login-background.jpg /usr/share/backgrounds/
+cp images/background-1.jpeg /usr/share/backgrounds/wallpapers/
+cp images/electric-guitar /usr/share/pixmaps/
 
 
