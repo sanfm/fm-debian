@@ -16,7 +16,7 @@ apt install unzip curl picom bspwm polybar lightdm rofi kitty thunar sxhkd nitro
 echo 'deb http://download.opensuse.org/repositories/home:/antergos/Debian_9.0/ /' | sudo tee /etc/apt/sources.list.d/home:antergos.list
 curl -fsSL https://download.opensuse.org/repositories/home:antergos/Debian_9.0/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_antergos.gpg > /dev/null
 apt update
-apt install lightdm-webkit2-greeter
+apt install lightdm-webkit2-greeter -y
 
 
 # Enable lightdm on start up
