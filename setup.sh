@@ -40,4 +40,12 @@ cp images/login-background.jpg /usr/share/backgrounds/
 cp images/background-1.jpeg /usr/share/backgrounds/wallpapers/
 cp images/electric-guitar.png /usr/share/pixmaps/
 
-
+# Add fonts
+#https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts
+mkdir -p /usr/share/fonts/NerdFonts
+cp -R fonts/* /usr/share/fonts/NerdFonts/
+tar -xf /usr/share/fonts/NerdFonts/NerdFiraCode.tar.gz -C /usr/share/fonts/NerdFonts
+tar -xf /usr/share/fonts/NerdFonts/NerdCodeNewRoman.tar.gz -C /usr/share/fonts/NerdFonts
+rm /usr/share/fonts/NerdFonts/NerdCodeNewRoman.tar.gz
+rm /usr/share/fonts/NerdFonts/NerdFiraCode.tar.gz
+fc-cache -fv
