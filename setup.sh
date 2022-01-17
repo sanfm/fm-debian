@@ -49,3 +49,9 @@ tar -xf /usr/share/fonts/NerdFonts/NerdCodeNewRoman.tar.gz -C /usr/share/fonts/N
 rm /usr/share/fonts/NerdFonts/NerdCodeNewRoman.tar.gz
 rm /usr/share/fonts/NerdFonts/NerdFiraCode.tar.gz
 fc-cache -fv
+
+# create user directories
+cd /home/$username
+mkdir -p Documents Downloads Music Pictures Videos
+chown $username *
+chgrp $username *
