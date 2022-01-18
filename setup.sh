@@ -19,6 +19,8 @@ cp -R lightDM/* /etc/lightdm/
 # Copy configuration files
 mkdir -p /home/$username/.config
 cp -R dotfiles/* /home/$username/.config/
+cd /home/$username/.config/kitty
+ln -s themes/Dracula-mod.conf theme.conf
 cd /home/$username
 chown -R $username .config
 chgrp -R $username .config
