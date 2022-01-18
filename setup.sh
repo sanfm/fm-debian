@@ -19,6 +19,9 @@ cp -R lightDM/* /etc/lightdm/
 # Copy configuration files
 mkdir -p /home/$username/.config
 cp -R dotfiles/* /home/$username/.config/
+cp dotfiles/gtk-2.0/.gtkrc-2.0 /home/$username/
+chown $username /home/$username/.gtkrc-2.0 
+chgrp $username /home/$username/.gtkrc-2.0 
 cd /home/$username/.config/kitty
 ln -s themes/Dracula-mod.conf theme.conf
 cd /home/$username
