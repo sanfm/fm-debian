@@ -48,7 +48,7 @@ line-size = 3
 line-color = #f00
 
 ; set monitor (if not set --> default monitor)
-monitor = Virtual1
+;monitor = Virtual1
 
 ;width = 100%
 height = 40
