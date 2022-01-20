@@ -8,7 +8,7 @@ apt update
 
 # Install base packages
 # https://wiki.archlinux.org/title/desktop_environment
-apt install unzip picom bspwm polybar lightdm rofi kitty thunar sxhkd nitrogen lxpolkit lxappearance xorg lightdm-gtk-greeter network-manager git vim neofetch firefox-esr -y
+apt install unzip picom bspwm polybar lightdm rofi kitty thunar sxhkd nitrogen lxpolkit lxappearance xorg lightdm-gtk-greeter network-manager alsa-utils pulseaudio pavucontrol git vim neofetch firefox-esr -y
 
 # Enable lightdm on start up
 sudo systemctl enable lightdm.service
