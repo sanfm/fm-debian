@@ -10,7 +10,7 @@
 configuration {
 	font:							"FantasqueSansMono Nerd Font 12";
     show-icons:                     false;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Tela dark";
     drun-display-format:            "{name}";
     disable-history:                false;
 	sidebar-mode: 					false;

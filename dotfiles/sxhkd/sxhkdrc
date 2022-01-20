@@ -14,11 +14,6 @@ super + d
 alt + Tab
 	rofi -no-lazy-grab -show window -modi window -theme $HOME/.config/rofi/themes/style_2.rasi
 
-# wifi selector custom script
-alt + w 
-	bash /home/Documents/rofi/rofi-wifi-menu/rofi-wifi-menu.sh
-	#rofi -no-lazy-grab -show window -modi window -theme $HOME/.config/rofi/themes/style_2.rasi
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
