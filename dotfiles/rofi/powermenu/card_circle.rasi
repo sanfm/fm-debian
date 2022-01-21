@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:							"Fira Code Nerd Font Bold 16";
     show-icons:                     false;
 	icon-theme: 					"Tela dark";
     drun-display-format:            "{name}";
@@ -20,9 +20,9 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               @background;
+    background-color:               @background-window;
     text-color:                     @foreground;
-    border-radius:                  0px;
+    border-radius:                  20px;
     height:                         28.5%;
     width:                          50%;
     location:                       center;
@@ -71,7 +71,9 @@ mainbox {
     background-color:               @background;
     children:                       [ inputbar, listview ];
     spacing:                        3.5%;
-    padding:                        4% 0% 0% 2%;
+    padding:                        4% 0% 0% 4%;
+    margin:			    2% 1% 2% 1%;
+    border-radius:  		    20px;
 }
 
 element {
@@ -84,7 +86,7 @@ element {
 element-text {
     background-color: 				#00000000;
     text-color:       				inherit;
-	font:							"feather 32";
+	font:							"Code New Roman Nerd Font Bold 40";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;

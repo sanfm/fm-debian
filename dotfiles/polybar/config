@@ -64,7 +64,7 @@ border-size = 0
 border-color = #00000000
 
 ; add a gap at the right of the bar
-padding-right = 2
+padding-right = 3
 
 ; gap between modules
 module-margin-left = 1
@@ -72,12 +72,12 @@ module-margin-right = 1
 
 
 ; fc-list to show all fonts in the system
-font-0 = FiraCode Nerd Font:size=17;6
+font-0 = FiraCode Nerd Font:size=17;10
 
 ; define where to place the modules
 modules-left = workspaces xwindow
 modules-center = time
-modules-right = audio wifi-selector sysmenu
+modules-right = wlan audio wifi-selector sysmenu
 
 wm-restack = bspwm
 
