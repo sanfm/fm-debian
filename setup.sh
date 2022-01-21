@@ -17,6 +17,9 @@ cp -R lightDM/* /etc/lightdm/
 
 
 # Copy configuration files
+cp .Xresources /home/$username/
+chown $username /home/$username/.Xresources
+chgrp $username /home/$username/.Xresources
 mkdir -p /home/$username/.config
 cp -R dotfiles/* /home/$username/.config/
 cp dotfiles/gtk-2.0/.gtkrc-2.0 /home/$username/
