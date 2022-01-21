@@ -1,16 +1,18 @@
 #! /bin/sh
 
-setxkbmap -layout es
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
+# launc polybar
 bash ~/.config/polybar/launch.sh &
 
-nitrogen --restore
 
-light-locker &
+# set Keyboard layout
+setxkbmap -layout es
+
+
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -23,3 +25,12 @@ bspc config gapless_monocle      true
 bspc rule -a Pavucontrol state=floating rectangle=1000x700+2600+100
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+
+
+# Autostart
+nitrogen --restore
+
+light-locker &
+
+lxpolkit &
