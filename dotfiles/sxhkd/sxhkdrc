@@ -22,9 +22,32 @@ super + f
 super + b
 	firefox-esr
 
+# How to know the name of certain keys:
+# run xev in a terminal, focus the new open window and press the key
+# Look for the key name reading the output in the terminal
+# For example: Fn + F2 is XF86AudioLowerVolume 
+
 # volume control
-alt + {F2,F3,F4}
-	amixer set Master {5%-,5%+,toggle}
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioMute
+	amixer set Master toggle
+
+
+# take screenshots
+Print
+	flameshot full -p ~/Pictures
+
+shift + Print
+	flameshot gui -p ~/Pictures
+
+
+
+
 
 # make sxhkd reload its configuration files:
 super + Escape
