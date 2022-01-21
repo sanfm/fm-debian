@@ -45,7 +45,9 @@ Print
 shift + Print
 	flameshot gui -p ~/Pictures
 
-
+# Show shortcuts
+super + k
+	cat $HOME/.config/sxhkd/keys | rofi -dmenu -theme $HOME/.config/rofi/themes/style_2.rasi
 
 
 

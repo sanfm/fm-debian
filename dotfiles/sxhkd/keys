@@ -1,0 +1,15 @@
+super + Return: kitty
+super + d: 	rofi (app launcher)
+alt  + tab:	rofi (opened windows)
+super + f:	thunar
+super + b: 	firefox-esr
+Fn + F2:	vulume -
+Fn + F3:	vulume +
+Fn + F4:	vulume mute/unmute
+Print:		full screen screenshot
+shift + Print:	selection screenshot
+super + Escape:	reload sxhkd config files
+super + alt + q: quit bspwm (logout)
+super + alt + r: restart bspwm
+super + w:	close focus window
+super + m:	alternate between tiled and full screen
