@@ -14,21 +14,25 @@ super + d
 alt + Tab
 	rofi -no-lazy-grab -show window -modi window -theme $HOME/.config/rofi/themes/style_2.rasi
 
+# file manager
 super + f
 	thunar
 
+# web browser
 super + b
 	firefox-esr
 
+# volume control
+alt + {F2,F3,F4}
+	amixer set Master {5%-,5%+,toggle}
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
+
 # bspwm hotkeys
 #
-
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
