@@ -31,6 +31,8 @@ bspc rule -a Screenkey manage=off
 # Autostart
 nitrogen --restore
 
+picom &
+
 light-locker &
 
 lxpolkit &
