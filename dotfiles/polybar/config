@@ -65,6 +65,7 @@ border-color = #00000000
 
 ; add a gap at the right of the bar
 padding-right = 3
+padding-left = 2
 
 ; gap between modules
 module-margin-left = 1
@@ -75,7 +76,7 @@ module-margin-right = 1
 font-0 = FiraCode Nerd Font:size=17;10
 
 ; define where to place the modules
-modules-left = workspaces focus-window
+modules-left = term workspaces focus-window
 modules-center = time
 modules-right = wlan audio wifi-selector sysmenu
 
