@@ -8,7 +8,7 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "/home/test/.config/rofi/themes/colors.rasi"
+@import "themes/colors.rasi"
 
 window {
     transparency:                   "real";
