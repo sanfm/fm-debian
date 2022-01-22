@@ -20,7 +20,7 @@ super + f
 
 # web browser
 super + b
-	firefox-esr
+	firefox-esr --private-window
 
 # How to know the name of certain keys:
 # run xev in a terminal, focus the new open window and press the key
