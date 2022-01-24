@@ -91,4 +91,28 @@ rofi/themes/style_1.rasi
 
 You also would want to check the padding values in the rofi files (inside the 'mainbox' class) if elements are not centered in the rofi menus.
 
+# Brightness control
+I'm using external monitors and i wanted a lightweight and simple way to manege my screen's brightness. In my case xbacklight didn't work, so i use DDC/CI portocol instead. To set it up you need to:
+- Load the i2c-dev kernel module (As we are going to use I2C connection to communicate with the monitor)
+- Install the ddcutil package
 
+In orther to achive that you can visit the following links:
+```
+https://blog.tcharles.fr/ddc-ci-screen-control-on-linux/
+https://moverest.xyz/blog/control-display-with-ddc-ci/
+```
+
+Once you got it, you can set key bindings in the sxhkd config file to increase and decrease brightness. Something like:
+```
+F9
+    ddcutil setvcp 10 - 5
+F10
+    ddcutil setvcp 10 + 5
+```
+
+Note that I2C is not the fastest communication method, so you could experience a litlle bit of delay between the keystroke and the actual brightness change.
+
+
+# Acknowledgements
+- Rofi themes were created by Aditya Shakya, you can check it out in github @adi1090x, i have done small changes in fonts and size to fit my requirements.
+- I found really interesting and good explanations in the YouTube channel Eric Murphy and i also use eric's script for the wifi-menu-rofi.sh script. Github: ericmurphyxyz.
