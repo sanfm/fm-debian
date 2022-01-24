@@ -19,7 +19,7 @@ And run the bash script 'setup.sh' as root
 sudo sh setup.sh
 ```
 
-# Changes you could want to make
+# Changes you would want to make
 
 I'm using a 27 inch 4k monitor, so you may want to change things like fonts and HiDPI (display scaling). Below you can find a list of every parameter, fonts and size of rofi menus and polybar bar, that you could change if you want to make everything looks bigger or samller.
 
