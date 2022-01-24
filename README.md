@@ -10,7 +10,7 @@ git clone https://github.com/fedemoles/fm-debian.git
 move into the directory
 
 ```
-cd fm-debia/
+cd fm-debian/
 ```
 
 And run the bash script 'setup.sh' as root
