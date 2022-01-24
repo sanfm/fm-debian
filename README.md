@@ -63,7 +63,7 @@ rofi/powermenu/card_circle.rasi
 rofi/powermenu/confirm.rasi
 ```
 - Line 8 --> Font size
-- - Line 12 --> width
+- Line 12 --> width
 
 ```
 rofi/powermenu/message.rasi
@@ -96,7 +96,7 @@ I'm using external monitors and i wanted a lightweight and simple way to manege 
 - Load the i2c-dev kernel module (As we are going to use I2C connection to communicate with the monitor)
 - Install the ddcutil package
 
-In orther to achive that you can visit the following links:
+In order to achive that you can visit the following links:
 ```
 https://blog.tcharles.fr/ddc-ci-screen-control-on-linux/
 https://moverest.xyz/blog/control-display-with-ddc-ci/
