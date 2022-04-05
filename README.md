@@ -5,7 +5,7 @@ Custom Debian enviroment based on BSPWM
 
 Clone the repository, or download as a zip.
 ```
-git clone https://github.com/fedemoles/fm-debian.git
+git clone https://github.com/sanfm/fm-debian.git
 ```
 move into the directory
 
